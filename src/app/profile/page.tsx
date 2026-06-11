@@ -2,18 +2,18 @@ export default function ProfilePage() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-4xl">
       <h1 className="text-3xl md:text-4xl font-bold text-[#458bb7] mb-12 text-center border-b pb-6">プロフィール</h1>
-      
+
       <div className="bg-white p-8 border border-gray-200 rounded-lg shadow-sm mb-12">
         <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
           <div className="w-48 h-48 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 flex-shrink-0 overflow-hidden">
             <span className="text-sm">プロフィール画像</span>
             {/* 実際の画像に差し替えてください */}
           </div>
-          
+
           <div className="flex-1">
-            <h2 className="text-2xl font-bold text-gray-800 mb-2">小松 万里子 <span className="text-lg font-normal text-gray-600 ml-2">(Komatsu Mariko)</span></h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-2">小松 麻利子 <span className="text-lg font-normal text-gray-600 ml-2">(Komatsu Mariko)</span></h2>
             <p className="text-[#458bb7] font-semibold mb-6">特定社会保険労務士 / キャリアコンサルタント</p>
-            
+
             <p className="text-gray-700 leading-relaxed mb-6">
               京都府生まれ。大学卒業後、一般企業での人事・総務業務を経て、社会保険労務士試験に合格。
               労働問題の解決や就業規則の作成だけでなく、「人がいきいきと働ける組織づくり」をモットーに、
