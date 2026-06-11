@@ -19,8 +19,8 @@ export async function POST(request: Request) {
       port: Number(process.env.SMTP_PORT) || 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: process.env.SMTP_USER, 
-        pass: process.env.SMTP_PASS, 
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
     });
 
@@ -60,7 +60,7 @@ Email：marikokomatsukyo@gmail.com
     // 管理者宛の通知メール
     const adminMailOptions = {
       from: `"Webサイト お問い合わせフォーム" <${process.env.SMTP_USER || "noreply@example.com"}>`,
-      to: "tkomatsu4work@gmail.com", // 暫定の送信先
+      to: "marikokomatsukyo@gmail.com", // 暫定の送信先
       subject: `【Web問い合わせ】${name} 様より`,
       text: `
 Webサイトのフォームから新しいお問い合わせがありました。
@@ -79,12 +79,12 @@ ${message}
     // 環境変数が設定されていない場合（開発中）は、送信せずに成功を返す（実際のメール送信はスキップ）
     if (!process.env.SMTP_USER || !process.env.SMTP_PASS) {
       console.warn("SMTP_USER or SMTP_PASS is not set. Skipping actual email sending.");
-      console.log("Mock sending email to:", "tkomatsu4work@gmail.com");
+      console.log("Mock sending email to:", "marikokomatsukyo@gmail.com");
       console.log("Content:", adminMailOptions.text);
-      
+
       // テスト用に遅延を入れる
       await new Promise((resolve) => setTimeout(resolve, 1000));
-      
+
       return NextResponse.json(
         { message: "お問い合わせを受け付けました（テスト環境のためメールは送信されていません）" },
         { status: 200 }
