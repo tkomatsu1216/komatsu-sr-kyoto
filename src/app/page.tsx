@@ -1,135 +1,152 @@
 import Link from "next/link";
 import Image from "next/image";
+import {
+  FileText,
+  MessageSquare,
+  Award,
+  Target,
+  Users,
+  Network,
+  Goal,
+  BarChart3,
+  Clock,
+  ShieldCheck,
+  Flame,
+  HeartPulse,
+} from "lucide-react";
+
+const services = [
+  { icon: FileText, title: "就業規則見直し・作成", desc: "就業規則の新規作成、法律改正対応、会社オリジナルの制度に対応した就業規則の作成をいたします。" },
+  { icon: MessageSquare, title: "人事・労務相談", desc: "こんな時はどうしたらいいのか？〜トラブル予防のためどうしておけばいいか？までご相談にのります。" },
+  { icon: Award, title: "助成金の手続代行", desc: "雇用関係の助成金の代行手続きをします。" },
+  { icon: Target, title: "経営者コーチング", desc: "現状の整理や把握、ビジョン、社員をどう活かすか？などについて定期セッションを持つことで課題を把握し、速い決断と効果的な打ち手につながります。" },
+  { icon: Users, title: "人材育成サービス", desc: "自律型社員の育成のお手伝いをします。" },
+  { icon: Network, title: "組織開発・チームビルディング", desc: "社員の強みを活かし生産性が向上し続ける組織づくりをご支援します。" },
+  { icon: Goal, title: "チームと個人の目標達成支援", desc: "目標設定やアクションプランのフォローをします。" },
+  { icon: BarChart3, title: "診断ツールの提供", desc: "画期的な組織診断「ソコアゲ診断」で人材力・組織力・関係力が見える化、ハーマンモデルをベースにした「効き脳診断」で個人の強みを把握します。" },
+  { icon: Clock, title: "働き方改革の支援", desc: "ワークライフバランスの研修や、働き方改革の導入のサポートをします。" },
+  { icon: ShieldCheck, title: "ハラスメント防止サービス", desc: "ハラスメント防止研修、ハラスメント規程作成、ハラスメント防止法への対応をサポートします。" },
+  { icon: Flame, title: "アンガーマネジメント研修", desc: "怒りの感情と上手に付き合うスキルを身につける研修をします。ハラスメントの行為者等への個人セッションも承っています。" },
+  { icon: HeartPulse, title: "メンタルヘルスケアサービス", desc: "社員のモチベーション維持、メンタルダウン防止のため、カウンセリングサービスをします。" },
+];
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full h-[60vh] md:h-[80vh] bg-gray-100 flex items-center justify-center overflow-hidden">
-        {/* Simplified Hero Background (Replace with an actual Carousel if needed later) */}
-        <div className="absolute inset-0 bg-[#458bb7] opacity-10"></div>
-        <div className="z-10 text-center px-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6 tracking-wide leading-tight">
-            小松社会保険労務士事務所
-          </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            成果があがる組織づくり、何からスタートしたらいい？<br/>
-            京都の社労士が、あなたの会社の組織開発・人材育成をサポートします。
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/to-company" className="px-6 py-3 bg-[#458bb7] text-white font-semibold rounded-md shadow-md hover:bg-[#3a769b] transition-colors">
-              法人・事業主の方へ
-            </Link>
-            <Link href="/service-guide" className="px-6 py-3 bg-white text-[#458bb7] border border-[#458bb7] font-semibold rounded-md shadow-sm hover:bg-gray-50 transition-colors">
-              個人の方へ
-            </Link>
+      <section className="relative w-full min-h-[70vh] md:min-h-[82vh] flex items-center overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1920&q=80"
+          alt="チームで協力するビジネスシーン"
+          fill
+          priority
+          className="object-cover"
+        />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1c3a52]/90 via-[#23506e]/75 to-[#458bb7]/40" />
+
+        <div className="relative z-10 container mx-auto px-6 md:px-8">
+          <div className="max-w-2xl text-white">
+            <p className="inline-block text-sm font-medium tracking-widest mb-5 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/20">
+              京都の社会保険労務士事務所
+            </p>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight tracking-wide drop-shadow-sm">
+              成果があがる組織づくり、<br className="hidden md:block" />
+              何からはじめる？
+            </h1>
+            <p className="text-base md:text-lg text-white/90 mb-10 leading-relaxed max-w-xl">
+              労務管理から人材育成・組織開発まで。社員の強みが活き、モチベーション高く働ける職場づくりを、京都の社労士が伴走してご支援します。
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/to-company" className="px-7 py-3.5 bg-white text-[#23506e] font-semibold rounded-md shadow-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all">
+                法人・事業主の方へ
+              </Link>
+              <Link href="/service-guide" className="px-7 py-3.5 bg-transparent text-white border border-white/70 font-semibold rounded-md hover:bg-white/10 transition-colors">
+                個人の方へ
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Services PR Blocks */}
+      {/* Intro / Concept Section */}
       <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-[#458bb7] mb-12 relative pb-4">
-            主なサービス
-            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-[#458bb7] rounded"></span>
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="p-8 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-gray-50 text-center">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">就業規則見直し・作成</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                就業規則の新規作成、法律改正対応、会社オリジナルの制度に対応した就業規則の作成をいたします。
-              </p>
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="relative h-72 md:h-96 rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80"
+                alt="チームミーティングの様子"
+                fill
+                className="object-cover"
+              />
             </div>
-            <div className="p-8 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-gray-50 text-center">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">人事・労務相談</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                こんな時はどうしたらいいのか？～トラブル予防のためどうしておけばいいか？までご相談にのります。
+            <div>
+              <p className="text-sm font-semibold tracking-widest text-[#458bb7] mb-4">CONCEPT</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6 leading-snug">
+                「人」の力で、<br />会社の未来をひらく。
+              </h2>
+              <p className="text-gray-600 leading-loose mb-5">
+                変化の激しい時代に成果をあげ続けるには、「人材力」「組織力」「関係力」の3つをバランスよく高めることが欠かせません。
               </p>
-            </div>
-            <div className="p-8 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-gray-50 text-center">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">助成金の手続代行</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                雇用関係の助成金の代行手続きをします。
+              <p className="text-gray-600 leading-loose mb-8">
+                当事務所は、労務管理の専門家としての確かな手続き対応に加え、コーチングやチームビルディングを通じて、社員一人ひとりの強みが活きる組織づくりを伴走支援します。
               </p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="p-8 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white text-center">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">経営者コーチング</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                現状の整理や把握、ビジョン、社員をどう活かすか？などについて定期セッションを持つことで課題を把握し速い決断と効果的な打ち手につながります。
-              </p>
-            </div>
-            <div className="p-8 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white text-center">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">人材育成サービス</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                自律型社員の育成のお手伝いをします。
-              </p>
-            </div>
-            <div className="p-8 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-white text-center">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">組織開発・チームビルディング</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                社員の強みを活かし生産性が向上し続ける組織づくりをご支援します。
-              </p>
+              <Link href="/profile" className="inline-flex items-center gap-2 text-[#458bb7] font-semibold hover:gap-3 transition-all">
+                代表プロフィールを見る
+                <span aria-hidden>→</span>
+              </Link>
             </div>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="p-8 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-gray-50 text-center">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">チームと個人の目標達成支援</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                目標設定やアクションプランのフォローをします。
-              </p>
-            </div>
-            <div className="p-8 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-gray-50 text-center">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">診断ツールの提供</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                画期的な組織診断「ソコアゲ診断」で人材力・組織力・関係力が見える化、ハーマンモデルをベースにした「効き脳診断」で個人の強みを把握します。
-              </p>
-            </div>
-            <div className="p-8 border border-gray-100 rounded-lg shadow-sm hover:shadow-md transition-shadow bg-gray-50 text-center">
-              <h3 className="text-xl font-bold text-gray-800 mb-4">働き方改革の支援</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                ワークライフバランスの研修やワークライフバランス、働き方改革の導入のサポートをします。
-              </p>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 text-center">
-              <h3 className="text-lg font-bold text-[#458bb7] mb-3 border-b border-[#458bb7] pb-2 inline-block">ハラスメント防止サービス</h3>
-              <p className="text-gray-600 text-sm leading-relaxed mt-4">
-                ハラスメント防止研修、ハラスメント規程作成、ハラスメント防止法への対応をサポートします。
-              </p>
-            </div>
-            <div className="p-8 text-center">
-              <h3 className="text-lg font-bold text-[#458bb7] mb-3 border-b border-[#458bb7] pb-2 inline-block">アンガーマネジメント研修</h3>
-              <p className="text-gray-600 text-sm leading-relaxed mt-4">
-                怒りの感情と上手に付き合うスキルを身につける「アンガーマネジメント」研修をします。ハラスメントの行為者等にアンガーマネジメントセッションも承っています。
-              </p>
-            </div>
-            <div className="p-8 text-center">
-              <h3 className="text-lg font-bold text-[#458bb7] mb-3 border-b border-[#458bb7] pb-2 inline-block">メンタルヘルスケアサービス</h3>
-              <p className="text-gray-600 text-sm leading-relaxed mt-4">
-                社員のモチベーション維持、メンタルダウン防止のため、カウンセリングサービスをします。
-              </p>
-            </div>
-          </div>
-
         </div>
       </section>
-      
+
+      {/* Services Section */}
+      <section className="py-16 md:py-24 bg-[#f6f9fb]">
+        <div className="container mx-auto px-6 md:px-8">
+          <div className="text-center mb-14">
+            <p className="text-sm font-semibold tracking-widest text-[#458bb7] mb-3">SERVICE</p>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 relative inline-block pb-4">
+              主なサービス
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-[#458bb7] rounded" />
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.map((s) => {
+              const Icon = s.icon;
+              return (
+                <div
+                  key={s.title}
+                  className="group bg-white p-7 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div className="w-14 h-14 rounded-xl bg-[#eaf3f9] flex items-center justify-center mb-5 group-hover:bg-[#458bb7] transition-colors">
+                    <Icon className="w-7 h-7 text-[#458bb7] group-hover:text-white transition-colors" />
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-800 mb-3">{s.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Contact CTA */}
-      <section className="py-16 bg-[#f8fbfd] border-t border-blue-50">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">お問い合わせ・ご相談はこちらから</h2>
-          <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-            組織づくりや労務管理、研修などに関するご相談はお気軽にお問い合わせください。
+      <section className="relative py-20 md:py-28 overflow-hidden">
+        <Image
+          src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1920&q=80"
+          alt="明るいオフィス空間"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-[#23506e]/85" />
+        <div className="relative z-10 container mx-auto px-6 text-center text-white">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">お問い合わせ・ご相談はこちらから</h2>
+          <p className="text-white/90 mb-10 max-w-xl mx-auto leading-relaxed">
+            組織づくりや労務管理、研修などに関するご相談はお気軽にお問い合わせください。初回のご相談・お見積りは無料です。
           </p>
-          <Link href="/contact" className="inline-block px-8 py-4 bg-[#458bb7] text-white font-bold rounded-full shadow-lg hover:bg-[#3a769b] hover:-translate-y-1 transition-all duration-300">
+          <Link href="/contact" className="inline-block px-10 py-4 bg-white text-[#23506e] font-bold rounded-full shadow-lg hover:-translate-y-1 transition-all duration-300">
             お問い合わせフォームへ
           </Link>
         </div>
