@@ -9,8 +9,11 @@ export default function Header() {
 
   const links = [
     { href: "/", label: "ホーム" },
-    { href: "/to-company", label: "法人、事業主の方へ" },
-    { href: "/service-guide", label: "個人の方へ" },
+    { href: "/labor-consulting", label: "人事労務相談・就業規則" },
+    { href: "/coaching", label: "コーチング・組織開発" },
+    { href: "/1on1", label: "1on1研修" },
+    { href: "/dxo", label: "DXO" },
+    { href: "/anger-management", label: "アンガーマネジメント" },
     { href: "/profile", label: "プロフィール" },
     { href: "/fee", label: "料金案内" },
     { href: "/qa", label: "よくあるご質問" },

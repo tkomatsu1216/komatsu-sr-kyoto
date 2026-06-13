@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { LucideIcon } from "lucide-react";
 import {
   FileText,
   MessageSquare,
@@ -15,19 +16,19 @@ import {
   HeartPulse,
 } from "lucide-react";
 
-const services = [
-  { icon: FileText, title: "就業規則見直し・作成", desc: "就業規則の新規作成、法律改正対応、会社オリジナルの制度に対応した就業規則の作成をいたします。" },
-  { icon: MessageSquare, title: "人事・労務相談", desc: "こんな時はどうしたらいいのか？〜トラブル予防のためどうしておけばいいか？までご相談にのります。" },
-  { icon: Award, title: "助成金の手続代行", desc: "雇用関係の助成金の代行手続きをします。" },
-  { icon: Target, title: "経営者コーチング", desc: "現状の整理や把握、ビジョン、社員をどう活かすか？などについて定期セッションを持つことで課題を把握し、速い決断と効果的な打ち手につながります。" },
-  { icon: Users, title: "人材育成サービス", desc: "自律型社員の育成のお手伝いをします。" },
-  { icon: Network, title: "組織開発・チームビルディング", desc: "社員の強みを活かし生産性が向上し続ける組織づくりをご支援します。" },
-  { icon: Goal, title: "チームと個人の目標達成支援", desc: "目標設定やアクションプランのフォローをします。" },
-  { icon: BarChart3, title: "診断ツールの提供", desc: "画期的な組織診断「ソコアゲ診断」で人材力・組織力・関係力が見える化、ハーマンモデルをベースにした「効き脳診断」で個人の強みを把握します。" },
-  { icon: Clock, title: "働き方改革の支援", desc: "ワークライフバランスの研修や、働き方改革の導入のサポートをします。" },
-  { icon: ShieldCheck, title: "ハラスメント防止サービス", desc: "ハラスメント防止研修、ハラスメント規程作成、ハラスメント防止法への対応をサポートします。" },
-  { icon: Flame, title: "アンガーマネジメント研修", desc: "怒りの感情と上手に付き合うスキルを身につける研修をします。ハラスメントの行為者等への個人セッションも承っています。" },
-  { icon: HeartPulse, title: "メンタルヘルスケアサービス", desc: "社員のモチベーション維持、メンタルダウン防止のため、カウンセリングサービスをします。" },
+const services: { icon: LucideIcon; title: string; desc: string; href: string }[] = [
+  { icon: FileText, title: "就業規則見直し・作成", href: "/labor-consulting", desc: "就業規則の新規作成、法律改正対応、会社オリジナルの制度に対応した就業規則の作成をいたします。" },
+  { icon: MessageSquare, title: "人事・労務相談", href: "/labor-consulting", desc: "こんな時はどうしたらいいのか？〜トラブル予防のためどうしておけばいいか？までご相談にのります。" },
+  { icon: Award, title: "助成金の手続代行", href: "/labor-consulting", desc: "雇用関係の助成金の代行手続きをします。" },
+  { icon: Target, title: "経営者コーチング", href: "/coaching", desc: "現状の整理や把握、ビジョン、社員をどう活かすか？などについて定期セッションを持つことで課題を把握し、速い決断と効果的な打ち手につながります。" },
+  { icon: Users, title: "人材育成サービス", href: "/coaching", desc: "自律型社員の育成のお手伝いをします。" },
+  { icon: Network, title: "組織開発・チームビルディング", href: "/coaching", desc: "社員の強みを活かし生産性が向上し続ける組織づくりをご支援します。" },
+  { icon: Goal, title: "チームと個人の目標達成支援", href: "/coaching", desc: "目標設定やアクションプランのフォローをします。" },
+  { icon: BarChart3, title: "診断ツールの提供", href: "/coaching", desc: "画期的な組織診断「ソコアゲ診断」で人材力・組織力・関係力が見える化、ハーマンモデルをベースにした「効き脳診断」で個人の強みを把握します。" },
+  { icon: Clock, title: "自律分散型組織移行プログラム（DXO）", href: "/dxo", desc: "自律分散型組織移行プログラム（DXO）のワークショップ開催。社員が意思決定できるプログラム導入などを支援します。" },
+  { icon: ShieldCheck, title: "ハラスメント防止サービス", href: "/anger-management", desc: "ハラスメント防止研修、ハラスメント規程作成、ハラスメント防止法への対応をサポートします。" },
+  { icon: Flame, title: "アンガーマネジメント研修", href: "/anger-management", desc: "怒りの感情と上手に付き合うスキルを身につける研修をします。ハラスメントの行為者等への個人セッションも承っています。" },
+  { icon: HeartPulse, title: "メンタルヘルスケアサービス", href: "/coaching", desc: "社員のモチベーション維持、メンタルダウン防止のため、カウンセリングサービスをします。" },
 ];
 
 export default function Home() {
@@ -58,11 +59,11 @@ export default function Home() {
               労務管理から人材育成・組織開発まで。社員の強みが活き、モチベーション高く働ける職場づくりを、京都の社労士が伴走してご支援します。
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/to-company" className="px-7 py-3.5 bg-white text-[#23506e] font-semibold rounded-md shadow-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all">
-                法人・事業主の方へ
+              <Link href="/labor-consulting" className="px-7 py-3.5 bg-white text-[#23506e] font-semibold rounded-md shadow-lg hover:bg-gray-50 hover:-translate-y-0.5 transition-all">
+                人事労務相談・就業規則
               </Link>
-              <Link href="/service-guide" className="px-7 py-3.5 bg-transparent text-white border border-white/70 font-semibold rounded-md hover:bg-white/10 transition-colors">
-                個人の方へ
+              <Link href="/coaching" className="px-7 py-3.5 bg-transparent text-white border border-white/70 font-semibold rounded-md hover:bg-white/10 transition-colors">
+                コーチング・組織開発
               </Link>
             </div>
           </div>
@@ -116,8 +117,9 @@ export default function Home() {
             {services.map((s) => {
               const Icon = s.icon;
               return (
-                <div
+                <Link
                   key={s.title}
+                  href={s.href}
                   className="group bg-white p-7 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
                 >
                   <div className="w-14 h-14 rounded-xl bg-[#eaf3f9] flex items-center justify-center mb-5 group-hover:bg-[#458bb7] transition-colors">
@@ -125,7 +127,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-lg font-bold text-gray-800 mb-3">{s.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
-                </div>
+                </Link>
               );
             })}
           </div>
