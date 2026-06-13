@@ -20,7 +20,7 @@ export default function ProfilePage() {
 
           <div className="flex-1">
             <h2 className="text-2xl font-bold text-gray-800 mb-1">小松 麻利子 <span className="text-lg font-normal text-gray-600 ml-2">(Komatsu Mariko)</span></h2>
-            <p className="text-[#458bb7] font-semibold mb-6">特定社会保険労務士 / 産業カウンセラー</p>
+            <p className="text-[#458bb7] font-semibold mb-6">特定社会保険労務士 / 産業カウンセラー / チームビルディングコンサルタント</p>
 
             <p className="text-gray-700 leading-relaxed">
               会社員、日本語教師を経て社会保険労務士事務所勤務後、平成20年小松社会保険労務士事務所開業。中小企業の労務管理支援、人材育成、チームビルディング（人材開発・組織開発）、ハラスメント防止対策など社員の強みが活きモチベーション高く働ける職場づくりを支援をしている。従業員10名未満から300名前後の中小企業への研修やコンサルティング等の支援実績多数。令和3年～イーリスハラスメントコンサルティング合同会社をパートナー社労士と共同経営、ハラスメント研修を多数実施、ハラスメント外部相談窓口は、中小企業から大企業まで継続してご依頼を頂いている。
@@ -40,9 +40,7 @@ export default function ProfilePage() {
           <li>アンガーマネジメントファシリテーター</li>
           <li>メンタルヘルス・マネジメント検定Ⅱ級</li>
           <li>コーチング資格（ALコーチ・マーコードモデル）</li>
-          <li>医療労務コンサルタント</li>
           <li>ハラスメント防止コンサルタント</li>
-          <li>イクメンコンサルタント</li>
           <li>JITCO外国人技能実習生制度講師資格</li>
         </ul>
       </div>
