@@ -5,7 +5,7 @@ export default function FeePage() {
     <div className="container mx-auto px-4 py-16 max-w-4xl">
       <h1 className="text-3xl md:text-4xl font-bold text-[#458bb7] mb-12 text-center border-b pb-6">料金案内</h1>
 
-      <p className="text-gray-700 mb-10 text-center">
+      <p className="text-gray-700 mb-10">
         当事務所の基本的な料金表です。実際の料金は、会社の規模やご依頼の内容によりお見積りいたしますので、まずはお気軽にご相談ください。
         <br />
         （表示はすべて税別です）
