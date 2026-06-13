@@ -24,16 +24,16 @@ export default function FeePage() {
             </thead>
             <tbody className="text-gray-600 bg-white">
               <tr className="border-b border-gray-200">
-                <td className="py-3 px-4">1〜5名</td>
-                <td className="py-3 px-4">1.5万円</td>
+                <td className="py-3 px-4">1〜4名</td>
+                <td className="py-3 px-4">2万円</td>
               </tr>
               <tr className="border-b border-gray-200">
-                <td className="py-3 px-4">6〜10名</td>
-                <td className="py-3 px-4">2.5万円</td>
+                <td className="py-3 px-4">5〜10名</td>
+                <td className="py-3 px-4">3万円</td>
               </tr>
               <tr className="border-b border-gray-200">
                 <td className="py-3 px-4">11〜20名</td>
-                <td className="py-3 px-4">3.5万円</td>
+                <td className="py-3 px-4">4万円</td>
               </tr>
               <tr className="border-b border-gray-200">
                 <td className="py-3 px-4">21〜30名</td>
@@ -49,7 +49,7 @@ export default function FeePage() {
         <div className="bg-white p-6 border border-gray-200 rounded-lg mt-6">
           <p className="text-gray-700 mb-4 text-sm leading-relaxed">
             <span className="font-semibold text-gray-800">【顧問契約の業務内容】</span><br />
-            人事労務相談、出勤簿・賃金台帳チェック、ハローワーク手続き、各保険の手続き、労災保険手続き、36協定作成、労働安全衛生法対応など
+            人事労務相談、出勤簿・賃金台帳チェック、ハローワーク手続き、社会保険・労働保険の手続き、労災保険手続き、36協定などの協定書作成、労働安全衛生法対応など
           </p>
           <div className="border-t border-gray-100 pt-4">
             <p className="font-semibold text-gray-800 mb-3">給与計算料金</p>
