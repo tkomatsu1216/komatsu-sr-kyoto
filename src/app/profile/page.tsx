@@ -44,6 +44,8 @@ export default function ProfilePage() {
         <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4">
           <li>特定社会保険労務士</li>
           <li>産業カウンセラー</li>
+          <li>最強のチームビルディング®コンサルタント</li>
+          <li>DXOインストーラー</li>
           <li>アンガーマネジメントファシリテーター</li>
           <li>メンタルヘルス・マネジメント検定Ⅱ級</li>
           <li>コーチング資格（ALコーチ・マーコードモデル）</li>
@@ -62,7 +64,8 @@ export default function ProfilePage() {
           <li>ラボール学園「女性の働き方」「アンガーマネジメント講座」等講師</li>
           <li>市民向け講座・公的団体・企業でのセミナー講師多数</li>
           <li>京都府社会保険労務士会ワークサポート事業、NPO法人派遣による高校生・大学生向け「働くこと・生きること」授業講師</li>
-          <li>合同会社WLBC関西受託の京都府女性活躍推進・WLB支援事業、守口市働き方改革支援、滋賀県甲賀市イクボス事業等に参画</li>
+          <li>京都府女性活躍推進・WLB支援事業、守口市働き方改革支援、滋賀県甲賀市イクボス事業等に参画</li>
+          <li>厚生労働省育児プランナー</li>
         </ul>
       </div>
 
@@ -98,7 +101,7 @@ export default function ProfilePage() {
               </tr>
               <tr className="border-b border-gray-200">
                 <th className="py-4 px-4 bg-gray-50 font-semibold text-gray-700">対応地域</th>
-                <td className="py-4 px-4 text-gray-600">京都府・大阪府・滋賀県・奈良県・兵庫県（主に関西エリア）<br />セミナー・講演は全国対応</td>
+                <td className="py-4 px-4 text-gray-600">京都府・大阪府・滋賀県・奈良県・兵庫県（主に関西エリア）<br />セミナー・コンサルティング講演は全国対応</td>
               </tr>
             </tbody>
           </table>
