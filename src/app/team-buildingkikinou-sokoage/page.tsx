@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Users, BrainCircuit, BarChart3 } from "lucide-react";
 
@@ -52,11 +53,20 @@ export default function TeamBuildingPage() {
           </div>
           <div>
             <h2 className="text-2xl font-bold text-gray-800 mb-4">ソコアゲ診断</h2>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed mb-6">
               組織の「現状」を数値化し、目に見えない課題を明らかにする画期的な組織診断ツールです。
               人材力・組織力・関係力の3つの観点から組織の状態を分析し、
               どこに手を打てば組織が良くなるのか、具体的なアクションプランの策定に役立てます。
             </p>
+            <div className="mt-4">
+              <Image
+                src="/sokoa-ge-diagram.png"
+                alt="組織強化に必須の3つの視点で見える化 — 人材力・組織力・関係力のスパイラル図"
+                width={800}
+                height={500}
+                className="w-full h-auto rounded-lg border border-gray-100 shadow-sm"
+              />
+            </div>
           </div>
         </div>
       </div>
