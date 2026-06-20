@@ -42,7 +42,7 @@ export default function QaPage() {
       q: "Q４.チームビルディングコンサルティングは具体的に役に立ちますか？",
       a: (
         <>
-          <p className="font-semibold text-gray-800 mb-3">A４.はい。成果をあげられる組織になるために必要不可欠です。</p>
+          <p className="font-semibold text-gray-800 mb-3">A４.成果をあげられる組織になるために必要不可欠です。</p>
           <p className="text-gray-700 leading-relaxed mb-3">
             変化の激しい予測がしにくいビジネス環境においては、益々、「人材力」（＝社員一人一人の能力）「組織力」（＝ビジョンや目的、制度や仕組み）「関係力」（＝コミュニケーション）の3つをバランス良く高めていくことが、成果をあげられる組織です。
           </p>

@@ -5,7 +5,7 @@ export default function TeamBuildingPage() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-4xl">
       <h1 className="text-3xl md:text-4xl font-bold text-[#458bb7] mb-12 text-center border-b pb-6">
-        チームビルディングと効き脳診断・ソコアゲ診断
+        チームビルディングと利き脳診断・ソコアゲ診断
       </h1>
       
       <div className="mb-12">
@@ -36,7 +36,7 @@ export default function TeamBuildingPage() {
             <BrainCircuit className="w-10 h-10 text-[#458bb7]" />
           </div>
           <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">効き脳診断（ハーマンモデル）</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">利き脳診断（ハーマンモデル）</h2>
             <p className="text-gray-600 leading-relaxed">
               利き手と同じように、脳にも「効き脳（思考のクセ）」があります。
               全米で開発された「ハーマンモデル」をベースにした診断ツールを使用し、

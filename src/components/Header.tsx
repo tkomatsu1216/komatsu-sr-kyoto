@@ -8,17 +8,13 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { href: "/", label: "ホーム" },
-    { href: "/labor-consulting", label: "人事労務相談・就業規則" },
+    { href: "/team-buildingkikinou-sokoage", label: "チームビルディング・利き脳診断" },
     { href: "/coaching", label: "コーチング・組織開発" },
     { href: "/1on1", label: "1on1研修" },
     { href: "/dxo", label: "DXO" },
     { href: "/anger-management", label: "アンガーマネジメント" },
     { href: "/profile", label: "プロフィール" },
     { href: "/fee", label: "料金案内" },
-    { href: "/qa", label: "よくあるご質問" },
-    { href: "/contact", label: "お問い合わせ" },
-    { href: "/blog", label: "ブログ" },
   ];
 
   return (

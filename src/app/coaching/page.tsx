@@ -49,7 +49,7 @@ export default function CoachingPage() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-4xl">
       <h1 className="text-3xl md:text-4xl font-bold text-[#458bb7] mb-12 text-center border-b pb-6">
-        経営者コーチング・チームと個人の目標達成支援、組織開発・チームビルディング
+        経営者コーチング・チームと個人の目標達成支援、OKR
       </h1>
 
       {/* 概要 */}

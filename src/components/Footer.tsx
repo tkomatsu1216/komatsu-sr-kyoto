@@ -19,16 +19,18 @@ export default function Footer() {
           <h4 className="text-lg font-bold mb-4 border-b border-white/20 pb-2 inline-block">メニュー</h4>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm opacity-90">
             <li><Link href="/" className="hover:underline">ホーム</Link></li>
-            <li><Link href="/to-company" className="hover:underline">法人、事業主の方へ</Link></li>
-            <li><Link href="/service-guide" className="hover:underline">個人の方へ</Link></li>
             <li><Link href="/profile" className="hover:underline">プロフィール</Link></li>
             <li><Link href="/fee" className="hover:underline">料金案内</Link></li>
             <li><Link href="/qa" className="hover:underline">よくあるご質問</Link></li>
             <li><Link href="/contact" className="hover:underline">お問い合わせ</Link></li>
             <li><Link href="/blog" className="hover:underline">ブログ</Link></li>
-            <li><Link href="/team-buildingkikinou-sokoage" className="hover:underline">チームビルディング・効き脳診断</Link></li>
-            <li><Link href="/anger-management-info" className="hover:underline">アンガーマネジメント講座情報</Link></li>
-            <li><Link href="/session" className="hover:underline">個人セッション</Link></li>
+            <li><Link href="/labor-consulting" className="hover:underline">人事労務相談・就業規則</Link></li>
+            <li><Link href="/stress-check" className="hover:underline">ストレスチェック</Link></li>
+            <li><Link href="/team-buildingkikinou-sokoage" className="hover:underline">チームビルディング・利き脳診断</Link></li>
+            <li><Link href="/coaching" className="hover:underline">コーチング・組織開発</Link></li>
+            <li><Link href="/1on1" className="hover:underline">1on1研修</Link></li>
+            <li><Link href="/dxo" className="hover:underline">DXO</Link></li>
+            <li><Link href="/anger-management" className="hover:underline">アンガーマネジメント</Link></li>
           </ul>
         </div>
       </div>
