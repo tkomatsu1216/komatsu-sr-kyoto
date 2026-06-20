@@ -31,6 +31,7 @@ export default function Footer() {
             <li><Link href="/1on1" className="hover:underline">1on1研修</Link></li>
             <li><Link href="/dxo" className="hover:underline">DXO</Link></li>
             <li><Link href="/anger-management" className="hover:underline">アンガーマネジメント</Link></li>
+            <li><Link href="/mental-health" className="hover:underline">メンタルヘルスケア</Link></li>
           </ul>
         </div>
       </div>

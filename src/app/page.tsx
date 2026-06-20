@@ -24,11 +24,11 @@ const services: { icon: LucideIcon; title: string; desc: string; href: string }[
   { icon: Users, title: "人材育成サービス", href: "/coaching", desc: "自律型社員の育成のお手伝いをします。" },
   { icon: Network, title: "組織開発・チームビルディング", href: "/coaching", desc: "社員の強みを活かし生産性が向上し続ける組織づくりをご支援します。" },
   { icon: Goal, title: "チームと個人の目標達成支援", href: "/coaching", desc: "目標設定やアクションプランのフォローをします。" },
-  { icon: BarChart3, title: "診断ツールの提供", href: "/coaching", desc: "画期的な組織診断「ソコアゲ診断」で人材力・組織力・関係力が見える化、ハーマンモデルをベースにした「利き脳診断」で個人の強みを把握します。" },
+  { icon: BarChart3, title: "診断ツールの提供", href: "/team-buildingkikinou-sokoage", desc: "画期的な組織診断「ソコアゲ診断」で人材力・組織力・関係力が見える化、ハーマンモデルをベースにした「利き脳診断」で個人の強みを把握します。" },
   { icon: Clock, title: "自律分散型組織移行プログラム（DXO）", href: "/dxo", desc: "自律分散型組織移行プログラム（DXO）のワークショップ開催。社員が意思決定できるプログラム導入などを支援します。" },
   { icon: ShieldCheck, title: "ハラスメント防止サービス", href: "/anger-management", desc: "ハラスメント防止研修、ハラスメント規程作成、ハラスメント防止法への対応をサポートします。" },
   { icon: Flame, title: "アンガーマネジメント研修", href: "/anger-management", desc: "怒りの感情と上手に付き合うスキルを身につける研修をします。ハラスメントの行為者等への個人セッションも承っています。" },
-  { icon: HeartPulse, title: "メンタルヘルスケアサービス", href: "/coaching", desc: "社員のモチベーション維持、メンタルダウン防止のため、カウンセリングサービスをします。" },
+  { icon: HeartPulse, title: "メンタルヘルスケアサービス", href: "/mental-health", desc: "社員のモチベーション維持、メンタルダウン防止のため、カウンセリングサービスをします。" },
 ];
 
 export default function Home() {
