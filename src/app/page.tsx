@@ -44,18 +44,18 @@ export default function Home() {
           className="object-cover"
         />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1c3a52]/90 via-[#23506e]/75 to-[#458bb7]/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1c3a52]/92 via-[#23506e]/80 to-[#458bb7]/60" />
 
         <div className="relative z-10 container mx-auto px-6 md:px-8">
           <div className="max-w-2xl text-white">
             <p className="inline-block text-sm font-medium tracking-widest mb-5 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/20">
               京都の社会保険労務士事務所
             </p>
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight tracking-wide drop-shadow-sm">
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight tracking-wide hero-text-shadow">
               成果があがる組織づくり、<br className="hidden md:block" />
               何からはじめる？
             </h1>
-            <p className="text-base md:text-lg text-white/90 mb-10 leading-relaxed max-w-xl">
+            <p className="text-base md:text-lg text-white/95 mb-10 leading-relaxed max-w-xl hero-subtext-shadow">
               労務管理から人材育成・組織開発まで。社員の強みが活き、モチベーション高く働ける職場づくりを、京都の社労士が伴走してご支援します。
             </p>
             <div className="flex flex-wrap gap-4">
